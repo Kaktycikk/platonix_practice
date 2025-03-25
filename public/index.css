@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+.todo {
+    margin-bottom: 1rem;
+  }
+  
+  .todo span.completed {
+    text-decoration: line-through;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+}
+.nav-wrapper .brand-logo {
+  font-family: "Winky Sans", sans-serif;
+  margin-left: 40px;
+}
+  .todo button {
+    background-color: #f6b090;
+  }
+  .todo button:hover {
+    background-color: #f6b0908e;
+  }
+  .btn {
+    background-color: #f6b090;
+  }
+  .btn:hover {
+    background-color: #f6b0908e;
+  }
+  .todo label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #f6b0902c;
+    padding: 1rem;
+  }
+  
+  .todo i {
+    z-index: 2;
+  }
