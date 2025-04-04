@@ -1,0 +1,21 @@
+<h2>Список задач</h2><!Заголовок страницы>
+
+{{#if todos.length}}<!Проверяет, есть ли в списке todos элементы.>
+<ul id="todo-list"><!Создает неупорядоченный список с id="todo-list">
+    {{#each todos}}<!Перебирает каждый элемент списка. Для каждой задачи создается li>
+    <li class="todo" data-id="{{id}}"><!Создает пункт списка. атрибут data-id="{{id}}" (сохранение ID задачи)>
+        <label>
+            <input type="checkbox" {{#if completed}}checked{{/if}}><!Если completed == true → checked (задача выполнена)>
+            <span class="{{#if completed}}completed{{/if}}">{{title}}</span><!Если completed == true, то добавляется CSS-класс "completed" (стилизуется как выполненная)>
+        </label>
+    </li>
+    {{/each}}
+</ul>
+<div class="button-container">
+    <button id="save-all" class="btn">Сохранить элементы</button>
+    <button id="reset-all" class="btn">Удаление/сброс</button>
+</div>
+
+{{else}}
+<p>Нет задач!</p>
+{{/if}}

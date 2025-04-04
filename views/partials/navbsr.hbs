@@ -1,0 +1,22 @@
+<nav class = "#f6b090">
+    <div class="nav-wrapper"><!Используется для оформления панели навигации.>
+      <a href="/" class="brand-logo">Carambola</a><!Логотип и ссылка на главную страницу>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down"><!Меню навигации>
+
+        {{#if isIndex}}<!Проверяет, является ли текущая страница главной>
+        <li class = "active"><a href="/">Данные</a></li><!class="active" для подсветки активного пункта>
+        {{else}}
+        <li><a href="/">Данные</a></li>
+        {{/if}}
+
+        {{#if isCreate}}<!Проверяет, находится ли пользователь на странице создания>
+        <li class = "active"><a href="/create">Создать</a></li><!class="active" для подсветки активного пункта>
+        {{else}}
+        <li><a href="/create">Создать</a></li>
+        {{/if}}
+
+
+      </ul>
+    </div>
+  </nav>

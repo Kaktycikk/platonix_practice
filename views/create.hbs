@@ -1,0 +1,11 @@
+<form action="/create" method="POST"><!action="/create" — указывает, что данные формы будут отправлены на маршрут /create.
+                                        method="POST" — используется метод POST (отправка данных на сервер).>
+    <h2>Добавить данные</h2><!Заголовок страницы>
+
+    <div class="input-field"><!специальный стиль Materialize CSS>
+        <input type="text" name="title"><!Текстовое поле для ввода задачи.>
+        <label>Todo title</label><!Подпись к полю>
+    </div>
+
+    <button type="submit" class="btn">Создать</button><!кнопка отправки формы>
+</form>
